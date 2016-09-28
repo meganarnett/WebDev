@@ -1,0 +1,29 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="homepage.css" />
+</head>
+#header
+	.navigation {
+		background-color:#006e6b;
+	}
+#header
+	.navLink {
+		color: white;
+	}
+#saying {
+	font-family: cursive;
+}
+.login{
+	float: right;
+	padding: 5px 5px;
+}
+.name{
+	float: left;
+	font-family: cursive;
+	padding: 5px 5px;
+}
+#footer {
+	background-color:#006e6b;	
+}
+.fLink {
+	color: white;
+}
