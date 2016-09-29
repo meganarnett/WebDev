@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<link rel="favicon" type="image/x-icon" href="pics/favicon.jpg">
 		<link rel="stylesheet" type="text/css" href="homepage.css">
 	</head>
 	<body>
@@ -10,13 +11,13 @@
 			</div>
 			<ul class="navigation">
 				<li class="navLink">
-					<a href="/~marnett/cs401/php/musician.php">Musicians</a>
+					<a href="php/musician.php">Musicians</a>
 				</li>
 				<li class="navLink">
-					<a href="/~marnett/cs401/php/teacher.php">Teachers</a>
+					<a href="php/teacher.php">Teachers</a>
 				</li>
 				<li class="navLink">
-					<a href="/~marnett/cs401/php/school.php">Schools</a>
+					<a href="php/school.php">Schools</a>
 				</li>
 			</ul>
 		</div>
