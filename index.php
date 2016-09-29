@@ -1,2 +1,3 @@
 <?php
-hello
+	include_once("homepage.html");
+?>
