@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<link rel="favicon" type="image/x-icon" href="pics/favicon.jpg">
-		<link rel="stylesheet" type="text/css" href="homepage.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/homepage.css">
 	</head>
 	<body>
 		<div id="header">
