@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<link rel="favicon" type="image/x-icon" href="pics/favicon.jpg">
+		<link rel="favicon" type="image/x-icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="homepage.css">
 	</head>
 	<body>
