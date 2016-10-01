@@ -24,7 +24,7 @@
 			</div>
 		</div>
 		<div id="content">
-			<h2>"Connect with Musicians Everywhere"</h2>	
+			<h2>Connect with Musicians Everywhere</h2>	
 		</div>
 		<div id="footer">
 			<ul>
