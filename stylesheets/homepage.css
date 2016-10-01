@@ -1,32 +1,37 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="homepage.css" />
 </head>
-.navigation {
+ul.navigation {
 	background-color:#006e6b;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-.music {
-	color: white;
+ul.navigation li {
+	background-color: #006e6b;
+	float: left;
 	list-style-type: none;
 }
 
-.teacher {
+ul.navigation li a {
+	display: inline-block;
 	color: white;
+	text-align: center;
+	padding: 15px 17px;
 	list-style-type: none;
-}
-
-.school {
-	color: white;
-	list-style-type:none;
 }
 
 #content {
 	font-family: cursive;
+	float: center;
+	padding: 50px 50px;
+	margin: 10px 10px;
 }
 
 .login {
 	float: right;
-	padding: 5px 5px;
+	padding: 10px 10px;
 	list-style-type: none;
 }
 
@@ -38,7 +43,7 @@
 
 #footer {
 	background-color:#006e6b;
-	position relative;
+	position: relative;
 	bottom: 0px;
 }
 
