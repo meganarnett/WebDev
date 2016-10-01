@@ -5,18 +5,29 @@
 	background-color:#006e6b;
 }
 
-.navLink {
+.music {
 	color: white;
 	list-style-type: none;
 }
 
-#saying {
+.teacher {
+	color: white;
+	list-style-type: none;
+}
+
+.school {
+	color: white;
+	list-style-type:none;
+}
+
+#content {
 	font-family: cursive;
 }
 
 .login {
 	float: right;
 	padding: 5px 5px;
+	list-style-type: none;
 }
 
 .name{
@@ -28,9 +39,10 @@
 #footer {
 	background-color:#006e6b;
 	position relative;
-	bottom: 0px;	
+	bottom: 0px;
 }
 
 .fLink {
 	color: white;
+	list-style-type: none;
 }

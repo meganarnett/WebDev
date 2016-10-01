@@ -9,19 +9,21 @@
 			<div class= "login">
 				<li> Log In</li>
 			</div>
-			<ul class="navigation">
-				<li class="navLink">
-					<a href="php/musician.php">Musicians</a>
-				</li>
-				<li class="navLink">
-					<a href="php/teacher.php">Teachers</a>
-				</li>
-				<li class="navLink">
-					<a href="php/school.php">Schools</a>
-				</li>
-			</ul>
+			<div>
+				<ul class="navigation">
+					<li class="music">
+						<a href="php/musician.php">Musicians</a>
+					</li>
+					<li class="teacher">
+						<a href="php/teacher.php">Teachers</a>
+					</li>
+					<li class="school">
+						<a href="php/school.php">Schools</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<div id="saying">
+		<div id="content">
 			<h2>"Connect with Musicians Everywhere"</h2>	
 		</div>
 		<div id="footer">
