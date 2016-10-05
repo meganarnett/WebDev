@@ -41,6 +41,10 @@ ul.navigation li a {
 	padding: 5px 5px;
 }
 
+#header {
+	overflow: auto;	
+}
+
 #footer {
 	background-color:#006e6b;
 	position: relative;
