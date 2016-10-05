@@ -1,27 +1,42 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="homepage.css" />
 </head>
+
 ul.navigation {
 	background-color:#006e6b;
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-ul.navigation li {
-	background-color: #006e6b;
-	float: left;
-	list-style-type: none;
-}
-ul.navigation li a {
-	display: inline-block;
-	color: white;
-	text-align: center;
-	padding: 15px 17px;
-	list-style-type: none;
 }
 
+ul.navigation li {
+	background-color: #006e6b;
+	list-style-type: none;
+	display: inline-block;
+}
+ul.navigation li a {
+	color: white;
+	text-align: center;
+	padding: 5px 7px;
+	margin: 20px 20px;
+}
+
+
+/*
+#navigation {
+	background-color: #006e6b;
+}
+
+.nLink {
+	color: white;
+	list-style-type: none;
+	display: inline-block;
+	text-align: left;
+	padding: 5px 7px;
+	margin: 20px 20px;
+}
+*/
+
 #content {
-	font-family: cursive;
+	font-family: "Times New Roman";
 	float: center;
 	padding: 50px 50px;
 	margin: 10px 10px;
@@ -39,6 +54,10 @@ ul.navigation li a {
 	padding: 5px 5px;
 }
 
+#header {
+	overflow: auto;
+}
+
 #footer {
 	background-color:#006e6b;
 	position: relative;
@@ -48,4 +67,8 @@ ul.navigation li a {
 .fLink {
 	color: white;
 	list-style-type: none;
+	display: inline-block;
+	text-align: left;
+	padding: 5px 5px;
+	margin: 20px 20px;
 }
