@@ -1,6 +1,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="homepage.css" />
 </head>
+<<<<<<< HEAD
 
 ul.navigation {
 	background-color:#006e6b;
@@ -32,11 +33,36 @@ ul.navigation li a {
 	text-align: left;
 	padding: 5px 7px;
 	margin: 20px 20px;
+=======
+ul.navigation {
+	background-color:#006e6b;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.navigation li {
+	background-color: #006e6b;
+	float: left;
+	list-style-type: none;
+}
+
+ul.navigation li a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 15px 17px;
+	list-style-type: none;
+>>>>>>> bee302700e1b6d0b957d161004a16ce81bb9f30c
 }
 */
 
 #content {
+<<<<<<< HEAD
 	font-family: "Times New Roman";
+=======
+	font-family: cursive;
+>>>>>>> bee302700e1b6d0b957d161004a16ce81bb9f30c
 	float: center;
 	padding: 50px 50px;
 	margin: 10px 10px;
