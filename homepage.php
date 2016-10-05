@@ -11,13 +11,13 @@
 			</div>
 			<div>
 				<ul class="navigation">
-					<li class="music">
+					<li class="nLink">
 						<a href="php/musician.php">Musicians</a>
 					</li>
-					<li class="teacher">
+					<li class="nLink">
 						<a href="php/teacher.php">Teachers</a>
 					</li>
-					<li class="school">
+					<li class="nLink">
 						<a href="php/school.php">Schools</a>
 					</li>
 				</ul>
