@@ -22,19 +22,6 @@
 					<a href="php/school.php">Schools</a>
 				</li>
 			</ul>
-		<div>
-				<ul class="navigation">
-					<li class="nLink">
-						<a href="php/musician.php">Musicians</a>
-					</li>
-					<li class="nLink">
-						<a href="php/teacher.php">Teachers</a>
-					</li>
-					<li class="nLink">
-						<a href="php/school.php">Schools</a>
-					</li>
-				</ul>
-			</div>
 		</div>
 		<div id="content">
 			<h2>Connect with Musicians Everywhere</h2>	
