@@ -10,8 +10,8 @@
 				<li> Log In</li>
 			</div>
 		</div>
-		<div>
-			<ul class="navigation">
+		<div id="navigation">
+			<ul>
 				<li class="nLink">
 					<a href="php/musician.php">Musicians</a>
 				</li>
