@@ -16,31 +16,6 @@
 	margin: 20px 20px;
 }
 
-
-/*
-ul.navigation {
-	background-color:#006e6b;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-ul.navigation li {
-	background-color: #006e6b;
-	list-style-type: none;
-	width: 100%;
-	display: inline-block
-}
-
-ul.navigation li a {
-	display: inline-block;
-	color: white;
-	text-align: center;
-	padding: 15px 17px;
-	list-style-type: none;
-}
-*/
-
 #content {
 	font-family: "Times New Roman";
 	float: center;
