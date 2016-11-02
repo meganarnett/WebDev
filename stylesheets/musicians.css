@@ -23,27 +23,17 @@
 	text-decoration: underline;
 }
 
-#content {
-	font-family: "Times New Roman";
-	float: center;
-	padding: 50px 50px;
-	margin: 10px 10px;
-}
-
 .login {
 	float: right;
 	padding: 10px 10px;
 	list-style-type: none;
+	color: black;
+	text-decoration: none;
 }
 
 .login li {
-	display: inline-block;
-}
-
-.lLink {
 	color: black;
 	text-decoration: none;
-	display: inline-block;
 }
 
 .lLink:hover {
@@ -51,7 +41,7 @@
 	text-decoration: underline;
 }
 
-.name{
+.name {
 	float: left;
 	font-family: cursive;
 	padding: 5px 5px;
@@ -61,16 +51,28 @@
 	overflow: auto;
 }
 
+#current {
+	color: #660033;
+}
+
 #footer {
-	background-color:#006e6b;
+	background-color: #006e6b;
 	position: relative;
 	bottom: 0px;
+}
+
+#footer li {
+	color: white;
+	list-style-type: none;
+	display: inline-block;
+	text-align: left;
+	padding: 5px;
+	margin: 15px 15px;
 }
 
 .fLink {
 	color: white;
 	list-style-type: none;
-	display: inline-block;
 	text-align: left;
 	padding: 5px 5px;
 	margin: 20px 20px;
