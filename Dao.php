@@ -14,10 +14,6 @@ class Dao {
 	private $pass = "password";
 	private $log;
 
-	public function __construct() {
-		$this->log = new KLogger("log.txt", KLogger::INFO);
-	}
-
 	public function getConnection() {
 		return
 			new PDO("mysql:host={this->host};dbname={this->db}", $this->user, $this->pass);

@@ -29,9 +29,14 @@
 	list-style-type: none;
 }
 
+.login li {
+	display: inline-block;
+}
+
 .lLink {
 	color: black;
 	text-decoration: none;
+	display: inline-block;
 }
 
 .lLink:hover {

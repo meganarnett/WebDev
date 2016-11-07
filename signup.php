@@ -8,9 +8,14 @@
 			<div>password: <input type="password" name="password">
 				<p>Choose wisely </p>
 			</div>
-			<div>Occupation: <input type="checkbox" name="occupation" value="student">Student<br>
-				<input type="checkbox" name="occupation" value="teacher">Teacher<br>
-				<input type="checkbox" name="occupation" value="school">School<br>
+			<div>
+				Occupation:
+				<select>
+					<option value="blank"></option>
+					<option value="student">Student</option>
+					<option value="teacher">Teacher</option>
+					<option value="school">School</option>
+				</select>
 			</div>
 			<div><input type="submit" value="Sign Up"></div>
 		</form>

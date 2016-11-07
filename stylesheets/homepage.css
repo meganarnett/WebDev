@@ -1,5 +1,6 @@
 #navigation {
 	background-color: #006e6b;
+	width: 100%;
 }
 
 #navigation li {
@@ -23,11 +24,20 @@
 	text-decoration: underline;
 }
 
-#content {
+img .content {
+	float: left;
+	height: 10px;
+	width: 5px;
+}
+
+.words {
 	font-family: "Times New Roman";
-	float: center;
-	padding: 50px 50px;
-	margin: 10px 10px;
+	float: right;
+	padding: 10px;
+}
+
+#content {
+	height: 100%;
 }
 
 .login {
