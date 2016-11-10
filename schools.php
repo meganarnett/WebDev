@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<div id="header">
-			<a class="logo" href="/homepage.php"><img src="/pics/toplogo.jpg" title="top logo" width="150" height="75" /></a>
+			<a class="logo" href="/cs401/homepage.php"><img src="/pics/toplogo.jpg" title="top logo" width="150" height="75" /></a>
 		<!--	<h1 class="name">Music Connect</h1>-->
 			<div class="login">
 				<li>
