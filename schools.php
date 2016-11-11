@@ -6,11 +6,11 @@
 <html>
 	<head>
 		<link rel="favicon" type="image/x-icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="/cs401/stylesheets/schools.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/schools.css">
 	</head>
 	<body>
 		<div id="header">
-			<a class="logo" href="/cs401/homepage.php"><img src="/cs401/pics/toplogo.jpg" title="top logo" width="150" height="75" /></a>
+			<a class="logo" href="/cs401/homepage.php"><img src="/pics/toplogo.jpg" title="top logo" width="150" height="75" /></a>
 		<!--	<h1 class="name">Music Connect</h1>-->
 			<div class="login">
 				<li>
@@ -22,19 +22,18 @@
 				<li>
 					<a class="lLink" href="/cs401/signup.php">Sign Up</a>
 				<?php } ?>
-				</li>
 			</div>
 		</div>
 		<div id="navigation">
 			<ul>
 				<li>
-					<a class="nLink" href="/cs401/musicians.php">Students</a>
+					<a class="nLink" href="/musicians.php">Students</a>
 				</li>
 				<li>
-					<a class="nLink" href="/cs401/teachers.php">Teachers</a>
+					<a class="nLink" href="/teachers.php">Teachers</a>
 				</li>
 				<li>
-					<a id="current" class="nLink" href="/cs401/schools.php">Schools</a>
+					<a id="current" class="nLink" href="/schools.php">Schools</a>
 				</li>
 			</ul>
 		</div>

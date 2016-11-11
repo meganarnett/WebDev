@@ -13,13 +13,13 @@
 		<h2>LOGIN!</h2>
 		<div id= "message"> <?php
 
-			foreach($_SESSION['message'] as $message) {
-				echo "<div>" . $message . "</div>";
+			foreach($_SESSION['errors'] as $errors) {
+				echo "<div>" . $errors . "</div>";
 			}
-			unset($_SESSION['message']); ?> 
+			unset($_SESSION['errors']); ?> 
 		</div>
 
-		<form method="post" action= "login_handler.php">
+		<form method="POST" action= "login_handler.php">
 			<div><label for= "email"> email: </label> <input id="email" value= "<?php echo isset($_SESSION['presets']['email']) ? $_SESSION['presets']['email'] : ""; ?>" type= "text" name="email">
 			</div>
 			
