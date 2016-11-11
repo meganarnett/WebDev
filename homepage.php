@@ -1,10 +1,6 @@
-<?php/*
-	session_start();
-	$loggedIn = Isset($_SESSION['logged_in']) ? $_SESSION['logged_in'] : false;
-	if(!$loggedIn) {
-		header("Location:login.php");
-		exit;	
-	}*/
+<?php
+	require_once('Dao.php');
+	require_once('login_handler.php');
 ?>
 
 <html>
@@ -18,11 +14,15 @@
 		<!--	<h1 class="name">Music Connect</h1> -->
 			<div class= "login">
 			<li> 
-				<a class="lLink" href="/cs401/login.php">Log In</a>
+				<?php if(isset($_SESSION['logged_in'])) { ?>
+					<a class="lLink" href="/cs401/logout.php">Log Out</a>
+				<?php } else { ?>
+					<a class="lLink" href="/cs401/login.php">Log In</a>
 			</li>
 				|
 			<li>
 				<a class="lLink" href="/cs401/signup.php"> Sign Up </a>
+				<?php } ?>
 			</li>
 			</div>
 		</div>

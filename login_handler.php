@@ -1,40 +1,41 @@
 <?php
-	session_start();
 	require_once 'Dao.php';
+	session_start();
 	$dao = new Dao();
 	
 	//get post data from login form
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 
+	$errors = array();
+
 	//select user from database to see if they exist
 	if($dao->doesUserExist($email, $password)) {
-		//if they exist, login
-		$_SESSION['logged_in'] = true;
-		header("Location:homepage.php");
-		exit;
+		if($dao->validateUser($email, $password) {
+			//if they exist, login
+			$_SESSION['logged_in'] = true;
+			session_regenerate_id(true);
+			$_SESSION['name'] = $user['name'];	
+			header("Location:homepage.php");
+			exit;
+		}
 	} else {
+		$errors['validate'] = "Invalid email or password";
+		$_SESSION['logged_in'] = false;
 		//if not, redirect to login page
 		header("Location:login.php");
 		exit;
 	}
 
 	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', email, $matches)) {
-		$_SESSION['message'][] = "Invalid email address";
+		$_SESSION['errors'][] = "Invalid email address";
 	}
 	
 	if(empty($password)) {
-		$_SESSION['message'][] = "Missing Password";
+		$_SESSION['errors'][] = "Missing Password";
 	}
 
-	if(isset($_SESSION['message'])) {
+	if(isset($_SESSION['errors'])) {
 		header("Location:login.php");
 		exit;
-	}
-
-	//select user from database to see if they are there.
-	if($dao -> doesUserExist($email, $password)) {
-		//if they exist
-		$_SESSION['logged in'] = true;
-		header("Location:homepage.php");
 	}

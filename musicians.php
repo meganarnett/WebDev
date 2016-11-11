@@ -1,3 +1,7 @@
+<?php
+	require_once('/cs401/Dao.php');
+	require_once('/cs401/login_handler.php');
+?>
 <html>
 	<head>
 		<link rel="favicon" type="image/x-icon" href="favicon.ico">
@@ -8,12 +12,16 @@
 			<a class="logo" href="/cs401/homepage.php"><img src="/cs401/pics/toplogo.jpg" title="top logo" width="150" height="75" /><a>
 		<!--	<h1 class="name">Music Connect</h1>-->
 			<div class="login">
-				<li> 
+				<li>
+				<?php if(isset($_SESSION['logged_in'])) { ?>
+					<a class"lLink" href="/cs401/logout.php">Log Out</a>
+				<?php }else { ?>
 					<a class="lLink" href="/cs401/login.php">Log In</a>
 				</li>
 				|
 				<li>
 					<a class="lLink" href="/cs401/signup.php">Sign Up</a>
+				<?php } ?>
 				</li>
 			</div>
 		</div>
