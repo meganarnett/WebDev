@@ -7,12 +7,12 @@
 	<body>
 		<h2> Sign Up! </h2>
 		<form method="POST" action="signup_handler.php">
-			<div>name: <input type="text" name="name" value="<?=$_SESSION['presets']['name'] ?> ">
+			<div>name: <input type="text" name="name">
 			<?php if(isset($_SESSION['errors']['name'])) { ?>
 				<span id="nameError" class="error"><?=$_SESSION['errors']['name'] ?></span>
 			<?php } ?>
 			</div>
-			<div>email: <input type="email" name="email" value="<?=$_SESSION['presets']['email'] ?> ">
+			<div>email: <input type="email" name="email">
 			<?php if(isset($_SESSION['errors']['email'])) { ?>
 				<span id="emailError" class="error"><?=$_SESSION['errors']['email'] ?></span>
 			<?php } ?>

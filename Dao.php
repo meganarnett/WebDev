@@ -77,4 +77,3 @@ class Dao {
 		$p->execute();
 		return $p->fetch();
 	}
-?>

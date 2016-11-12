@@ -1,6 +1,6 @@
 <?php
-	require_once('Dao.php');
-	require_once('login_handler.php');
+//	require_once('Dao.php');
+//	require_once('login_handler.php');
 ?>
 
 <html>
@@ -14,15 +14,15 @@
 		<!--	<h1 class="name">Music Connect</h1> -->
 			<div class= "login">
 			<li> 
-				<?php if(isset($_SESSION['logged_in'])) { ?>
+			<!--	<?php /*if(isset($_SESSION['logged_in'])) { ?>
 					<a class="lLink" href="/cs401/logout.php">Log Out</a>
-				<?php } else { ?>
+				<?php } else { */ ?> -->
 					<a class="lLink" href="/cs401/login.php">Log In</a>
 			</li>
 				|
 			<li>
 				<a class="lLink" href="/cs401/signup.php"> Sign Up </a>
-				<?php } ?>
+				<?php// } ?>
 			</div>
 		</div>
 		<div id="navigation">
