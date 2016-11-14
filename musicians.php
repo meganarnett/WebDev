@@ -1,15 +1,15 @@
 <?php
-	require_once('/cs401/Dao.php');
-	require_once('/cs401/login_handler.php');
+//	require_once('/cs401/Dao.php');
+//	require_once('/cs401/login_handler.php');
 ?>
 <html>
 	<head>
 		<link rel="favicon" type="image/x-icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="/stylesheets/musicians.css">
+		<link rel="stylesheet" type="text/css" href="/cs401/stylesheets/musicians.css">
 	</head>
 	<body>
 		<div id="header">
-			<a class="logo" href="/homepage.php"><img src="/pics/toplogo.jpg" title="top logo" width="150" height="75" /><a>
+			<a class="logo" href="/homepage.php"><img src="/cs401/pics/toplogo.jpg" title="top logo" width="150" height="75" /><a>
 		<!--	<h1 class="name">Music Connect</h1>-->
 			<div class="login">
 				<li>
@@ -27,13 +27,13 @@
 		<div id="navigation">
 			<ul>
 				<li>
-					<a id="current" class="nLink" href="/musicians.php">Students</a>
+					<a id="current" class="nLink" href="/cs401/musicians.php">Students</a>
 				</li>
 				<li>
-					<a class="nLink" href="/teachers.php">Teachers</a>
+					<a class="nLink" href="/cs401/teachers.php">Teachers</a>
 				</li>
 				<li>
-					<a class="nLink" href="/schools.php">Schools</a>
+					<a class="nLink" href="/cs401/schools.php">Schools</a>
 				</li>
 			</ul>
 		</div>

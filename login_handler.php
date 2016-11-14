@@ -11,7 +11,7 @@
 
 	//select user from database to see if they exist
 	if($dao->doesUserExist($email, $password)) {
-		if($dao->validateUser($email, $password) {
+		if($dao->validateUser($email, $password)) {
 			//if they exist, login
 			$_SESSION['logged_in'] = true;
 			session_regenerate_id(true);

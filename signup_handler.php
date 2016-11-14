@@ -7,6 +7,7 @@
 	$password= $_POST['password'];
 	$occupation= $_POST['occupation'];
 	$errors= array();
+	$dao = new Dao();
 
 	if(!valid_length($name, 0)) {
 		$errors['name'] = "Please put your name";
