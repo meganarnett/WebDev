@@ -7,25 +7,25 @@ class Dao {
 
 	pubic function getConnection() {
 		return
-		new PDO("mysql:host={$this->host};dbname={$this->dbname};
+		new PDO("mysql:host={$this->$host};dbname={$this->$dbname};
 	}
 */
-	private $host = "localhost/cs401";
+	private $host = "localhost";
 	private $db = "marnett";
-	private $user = "marnett";
-	private $pass = "password";
+	private $user = "root";
+	private $pass = "";
 	private $log;
 
 
 	public function getConnection() {
 		$conn = new PDO("mysql:host={$this->host};dbname={$this->db}", "$this->user", "$this->pass");
-		$conn->setAttribute(PDO::AFTER_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		return $conn;
 	}
 
 	public function doesUserExist($email, $password) {
 		$conn=$this->getConnection();
-		$p = $conn->prepare("SELECT * FROM user where email = :email ANDpassword = :password");
+		$p = $conn->prepare("SELECT * FROM user where email = :email AND password = :password");
 		$p->bindParam(':email', $email);
 		$p->bindParam(':password', $password);
 		$p->execute();
@@ -40,7 +40,7 @@ class Dao {
 		$conn=$this->getConnection();
 		$save = "INSERT INTO user (name, email, password, occupation)
 			 VALUES (:name, :email, :password, :occupation)";
-		$p = $conn->prepare($query);
+		$p = $conn->prepare($save);
 		$p->bindParam(':name', $name);
 		$p->bindParam(':email', $email);
 		$p->bindParam(':password', $password);

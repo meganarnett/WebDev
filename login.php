@@ -12,7 +12,7 @@
 	<body>
 		<h2>LOGIN!</h2>
 		<div id= "message"> <?php
-			if($_SESSION['errors'] != null) {
+			if(isset($_SESSION['errors'])) {
 				foreach($_SESSION['errors'] as $errors) {
 					echo "<div>" . $errors . "</div>";
 				}
@@ -27,7 +27,7 @@
 			<form action="login_handler.php" method="POST">
 		<!--	<div>email: <input type="text" name="email" value="<?php/* echo $email;*/ ?>"/>
 			</div> -->
-			<div>password: <input type="text" name="password" value=""/>
+			<div>password: <input type="password" name="password" value=""/>
 			</div>
 			<div> <input type="submit" value="login"></div>
 		</form>

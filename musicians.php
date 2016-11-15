@@ -1,6 +1,7 @@
 <?php
-//	require_once('/cs401/Dao.php');
-//	require_once('/cs401/login_handler.php');
+	require_once('Dao.php');
+	session_start();
+	$dao = new Dao();
 ?>
 <html>
 	<head>
@@ -9,7 +10,7 @@
 	</head>
 	<body>
 		<div id="header">
-			<a class="logo" href="/homepage.php"><img src="/cs401/pics/toplogo.jpg" title="top logo" width="150" height="75" /><a>
+			<a class="logo" href="/cs401/homepage.php"><img src="/cs401/pics/toplogo.jpg" title="top logo" width="150" height="75" /><a>
 		<!--	<h1 class="name">Music Connect</h1>-->
 			<div class="login">
 				<li>
@@ -36,6 +37,10 @@
 					<a class="nLink" href="/cs401/schools.php">Schools</a>
 				</li>
 			</ul>
+		</div>
+		<div id = "content">
+			<?php $query = ($dao->"SELECT name AND password FROM user WHERE occupation CONTAINS 'student'");
+			echo $query; ?>
 		</div>
 		<div id="footer">
 			<ul>
