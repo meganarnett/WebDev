@@ -14,7 +14,7 @@ class Dao {
 
 	pubic function getConnection() {
 		return
-		new PDO("mysql:host={$this->$host};dbname={$this->$dbname};
+		new PDO("mysql:host={$this->host};dbname={$this->dbname};
 	}
 
 	private $host = "localhost";
