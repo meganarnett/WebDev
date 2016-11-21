@@ -1,10 +1,10 @@
 <?php
 class Dao {
 	public $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-	public $server = $url["us-cdbr-iron-east-04.cleardb.net"];
-	public $username = $url["bab4dd1cb60954"];
-	public $password = $url["f5dffe97"];
-	public $db = substr($url["heroku_d49a7d31efccd7"], 1);
+	$server = $url["us-cdbr-iron-east-04.cleardb.net"];
+	$username = $url["bab4dd1cb60954"];
+	$password = $url["f5dffe97"];
+	$db = substr($url["heroku_d49a7d31efccd7"], 1);
 //	$conn = new mysqli($server, $username, $password, $db);
 
 /*	private $host = "us-cdbr-iron-east-04.cleardb.net";
