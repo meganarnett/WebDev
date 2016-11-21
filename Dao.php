@@ -5,7 +5,7 @@ class Dao {
 	$username = $url["bab4dd1cb60954"];
 	$password = $url["f5dffe97"];
 	$db = substr($url["heroku_d49a7d31efccd7"], 1);
-	$conn = new mysqli($server, $username, $password, $db);
+//	$conn = new mysqli($server, $username, $password, $db);
 	
 /*	private $host = "us-cdbr-iron-east-04.cleardb.net";
 	private $db = "heroku_d49a7d31efccd7";
