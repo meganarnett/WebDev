@@ -1,6 +1,7 @@
 <?php
 class Dao {
-	public $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+	public $url;
+	$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 	$server = $url["us-cdbr-iron-east-04.cleardb.net"];
 	$username = $url["bab4dd1cb60954"];
 	$password = $url["f5dffe97"];
