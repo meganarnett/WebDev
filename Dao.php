@@ -1,17 +1,6 @@
 <?php
 class Dao {
-	'mysql'  => [
-    'driver'    => 'mysql',
-    'host'      => env('DB_HOST', 'us-cdbr-iron-east-04.cleardb.net'),
-    'database'  => env('DB_DATABASE', 'heroku_d49a7d31efccd7'),
-    'username'  => env('DB_USERNAME', 'bab4dd1cb60954'),
-    'password'  => env('DB_PASSWORD', 'f5dffe97'),
-    'charset'   => 'utf8',
-    'collation' => 'utf8_unicode_ci',
-    'prefix'    => '',
-    'strict'    => false,
-];
-/*	public $url;
+	public $url;
 	$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 	$server = $url["us-cdbr-iron-east-04.cleardb.net"];
 	$username = $url["bab4dd1cb60954"];
@@ -19,7 +8,7 @@ class Dao {
 	$db = substr($url["heroku_d49a7d31efccd7"], 1);
 //	$conn = new mysqli($server, $username, $password, $db);
 
-	private $host = "us-cdbr-iron-east-04.cleardb.net";
+/*	private $host = "us-cdbr-iron-east-04.cleardb.net";
 	private $db = "heroku_d49a7d31efccd7";
 	private $user = "bab4dd1cb60954";
 	private $pass = "f5dffe97";
