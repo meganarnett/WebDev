@@ -1,0 +1,69 @@
+.error {
+        color: red;
+}
+
+h2 {
+        margin-left: 103px;
+        padding-top: 7px;
+        font-family: "Kaushan Script";
+        color: #006e6b;
+}
+
+#loginBox {
+        margin-left: 535px;
+        margin-top: 210px;
+        width: 310px;
+        height: 300px;
+        background-color: #C4C4C4;
+}
+
+label {
+        color: #660033;
+        font-weight: bold;
+        margin-left: 20px;
+}
+
+label.name {
+        margin-right: 39px;
+}
+
+label.email {
+        margin-right: 39px;
+}
+
+label.password {
+        margin-right: 14px;
+}
+
+label.location {
+        margin-right: 20px;
+}
+
+label.instrument {
+        margin-right: 2px;
+}
+
+.nameTxt {
+        margin-bottom: 10px;
+}
+
+.emailTxt {
+        margin-bottom: 10px;
+}
+
+.passTxt {
+        margin-bottom: 10px;
+}
+
+.occTxt {
+        margin-bottom: 10px;
+}
+
+.locTxt {
+        margin-bottom: 10px;
+}
+
+#button {
+        margin-left: 125px;
+        margin-top: 15px;
+}
