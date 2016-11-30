@@ -7,6 +7,7 @@
 	<head>
 		<link rel="favicon" type="image/x-icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="/stylesheets/homepage.css">
+		 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script|Ruthie">
 	</head>
 	<body>
 		<div id="header">
@@ -33,9 +34,9 @@
 				<li>
 					<a class= "nLink" href="/teachers.php">Teachers</a>
 				</li>
-				<li>
+			<!--	<li>
 					<a class= "nLink" href="/schools.php">Schools</a>
-				</li>
+				</li> -->
 			</ul>
 		</div>
 		<div id="content">
