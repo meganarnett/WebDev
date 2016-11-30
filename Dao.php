@@ -1,6 +1,6 @@
 <?php
+	require_once('password_compat/lib/password.php');
 class Dao {
-
 
 	public function getConnection() {
 		try {
