@@ -3,7 +3,6 @@
 echo "made it here 1";
 	session_start();
 	$dao = new Dao();
-	echo "made it here 2";
 	//get post data from login form
 	$email = $_POST['email'];
 	$password = $_POST['password'];
