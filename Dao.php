@@ -27,13 +27,18 @@ class Dao {
 	}
 
 	public function addUser($name, $email, $password, $occupation) {
+		//Hashing Password
+		$digest = password_hash($pasword, PASSWORD_DEFAULT);
+		if(!$digest) {
+                        throw new Exception("Password could not be hashed.");
+                }
 		$conn=$this->getConnection();
 		$save = "INSERT INTO user (name, email, password, occupation)
 			 VALUES (:name, :email, :password, :occupation)";
 		$p = $conn->prepare($save);
 		$p->bindParam(':name', $name);
 		$p->bindParam(':email', $email);
-		$p->bindParam(':password', $password);
+		$p->bindParam(':password', $digest);
 		$p->bindParam(':occupation', $occupation);
 		
 		try {
@@ -66,6 +71,12 @@ class Dao {
 		$p = $conn->prepare("SELECT password, name FROM user WHERE email = :email");
 		$p->bindParam('email', $email);
 		$p->execute();
-		return $p->fetch();
+		if(($user = $p->fetch())) {
+                        $digest = $user['password'];
+                        if(password_verify($password, $digest)) {
+                                return array('name' => $user['name']);
+                        }
+                }
+                return false;
 	}
 }
