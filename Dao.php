@@ -1,31 +1,21 @@
 <?php
 class Dao {
-	public $url;
-	$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-	$server = $url["us-cdbr-iron-east-04.cleardb.net"];
-	$username = $url["bab4dd1cb60954"];
-	$password = $url["f5dffe97"];
-	$db = substr($url["heroku_d49a7d31efccd7"], 1);
-//	$conn = new mysqli($server, $username, $password, $db);
 	
-	$config = array('host' => $server, 'user' => $username, 'pass' => $password, 'db' => $db);
-
-/*	private $host = "us-cdbr-iron-east-04.cleardb.net";
-	private $db = "heroku_d49a7d31efccd7";
-	private $user = "bab4dd1cb60954";
-	private $pass = "f5dffe97";
-
-	pubic function getConnection() {
-		return
-		new PDO("mysql:host={$this->host};dbname={$this->dbname};
-	}
-
-	private $host = "localhost";
-	private $db = "marnett";
-	private $user = "root";
-	private $pass = "";
+	private $host;
+	private $db;
+	private $user;
+	private $pass;
 	private $log;
-*/
+
+
+	public function __contstruct() {
+	
+	  $this->host = "us-cdbr-iron-east-04.cleardb.net";
+	  $this->db = "heroku_d49a7d31efccd7";
+	  $this->user = "bab4dd1cb60954";
+	  $this->pass = "f5dffe97";
+	
+	}
 
 	public function getConnection() {
 		$conn = new PDO("mysql:host={$this->host};dbname={$this->db}", "$this->user", "$this->pass");
