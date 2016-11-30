@@ -20,7 +20,11 @@ class Dao {
 
 	public function getConnection() {
 		echo "getting connection";
+		try {
 		$conn = new PDO("mysql:host={$this->host};dbname={$this->db}", "$this->user", "$this->pass");
+		} catch (Exception $e) {
+		echo print_r($e,1);	
+		}
 		echo "connection gotten";
 		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	exit;
