@@ -33,9 +33,9 @@
 				<li>
 					<a class="nLink" href="/teachers.php">Teachers</a>
 				</li>
-				<li>
+			<!--	<li>
 					<a class="nLink" href="/schools.php">Schools</a>
-				</li>
+				</li> -->
 			</ul>
 		</div>
 	<!--	<div id = "content">
