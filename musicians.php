@@ -15,7 +15,7 @@
 			<div class="login">
 				<li>
 				<?php if(isset($_SESSION['logged_in'])) { ?>
-					<a class"lLink" href="/logout.php">Log Out</a>
+					<a class="lLink" href="/logout.php">Log Out</a>
 				<?php }else { ?>
 					<a class="lLink" href="/login.php">Log In</a>
 				</li>
@@ -23,6 +23,7 @@
 				<li>
 					<a class="lLink" href="/signup.php">Sign Up</a>
 				<?php } ?>
+				</li>
 			</div>
 		</div>
 		<div id="navigation">
@@ -38,10 +39,11 @@
 				</li> -->
 			</ul>
 		</div>
-	<!--	<div id = "content">
-			<?php /*$query = ($dao->"SELECT name AND password FROM user WHERE occupation CONTAINS 'student'");
-			echo $query;*/ ?>
-		</div> -->
+		<div id = "content">
+		<!--	<?php /*$query = ($dao->"SELECT name AND password FROM user WHERE occupation CONTAINS 'student'");
+			echo $query;*/ ?> -->
+			<a class="profile" href="profile.php">Ayden Grant</a>
+		</div>
 		<div id="footer">
 			<ul>
 				<li class="fLink">About</li>
