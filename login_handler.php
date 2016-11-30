@@ -1,14 +1,15 @@
 <?php
 	require_once 'Dao.php';
+echo "made it here 1";
 	session_start();
 	$dao = new Dao();
-	
+	echo "made it here 2";
 	//get post data from login form
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 
 	$errors = array();
-
+echo "made it here {$email} {$password}";
 	//select user from database to see if they exist
 	if($dao->doesUserExist($email, $password)) {
 		if($dao->validateUser($email, $password)) {
