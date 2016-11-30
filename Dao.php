@@ -14,12 +14,16 @@ class Dao {
 	  $this->db = "heroku_d49a7d31efccd7";
 	  $this->user = "bab4dd1cb60954";
 	  $this->pass = "f5dffe97";
+		echo "constructed";
 	
 	}
 
 	public function getConnection() {
+		echo "getting connection";
 		$conn = new PDO("mysql:host={$this->host};dbname={$this->db}", "$this->user", "$this->pass");
+		echo "connection gotten";
 		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	exit;
 		return $conn;
 	}
 
