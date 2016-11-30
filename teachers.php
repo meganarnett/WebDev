@@ -6,7 +6,7 @@
 <html>
 	<head>
 		<link rel="favicon" type="image/x-icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="/stylesheets/schools.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/teachers.css">
 	</head>
 	<body>
 		<div id="header">
@@ -22,9 +22,10 @@
 				<li>
 					<a class="lLink" href="/signup.php">Sign Up</a>
 				<?php } ?>
+				</li>
 			</div>
 		</div>
-		<div id=navigation">
+		<div id="navigation">
 			<ul>
 				<li>
 					<a class="nLink" href="/musicians.php">Students</a>
@@ -32,9 +33,9 @@
 				<li>
 					<a id="current" class="nLink" href="/teachers.php">Teachers</a>
 				</li>
-				<li>
+			<!--	<li>
 					<a class="nLink" href="/schools.php">Schools</a>
-				</li>
+				</li> -->
 			</ul>
 		</div>
 		<div id="footer">
