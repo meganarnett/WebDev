@@ -1,33 +1,15 @@
 <?php
 class Dao {
-	
-	private $host;
-	private $db;
-	private $user;
-	private $pass;
-	private $log;
 
-
-	public function __contstruct() {
-	
-	  $this->host = "us-cdbr-iron-east-04.cleardb.net";
-	  $this->db = "heroku_d49a7d31efccd7";
-	  $this->user = "bab4dd1cb60954";
-	  $this->pass = "f5dffe97";
-		echo "constructed";
-	
-	}
 
 	public function getConnection() {
-		echo "getting connection";
 		try {
 		$conn = new PDO('mysql:dbname=heroku_d490a7d31efccd7;host=us-cdbr-iron-east-04.cleardb.net;port=3306', 'bab4dd1cb60954', 'f5dffe97');
 		} catch (Exception $e) {
-		echo print_r($e,1);	
+		        echo print_r($e,1);	
+			exit;
 		}
-		echo "connection gotten";
 		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	exit;
 		return $conn;
 	}
 
