@@ -21,7 +21,7 @@ class Dao {
 	public function getConnection() {
 		echo "getting connection";
 		try {
-		$conn = new PDO("mysql:host={$this->host};dbname={$this->db}", "$this->user", "$this->pass");
+		$conn = new PDO('mysql:dbname=heroku_d49a7d31efccd7;host=us-cdbr-iron-east-04.cleardb.net;port=3306', 'bab4dd1cb60954', 'f5dffe97');
 		} catch (Exception $e) {
 		echo print_r($e,1);	
 		}
