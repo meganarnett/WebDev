@@ -9,7 +9,7 @@
 ?>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/cs401/stylesheets/login.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script|Ruthie">
 	</head>
 	<body>
@@ -26,16 +26,19 @@
 
 		<form method="POST" action= "login_handler.php">
 			<div><label for= "email"> email: </label> 
-			<input id="email" value= "<?php echo isset($_SESSION['presets']['email']) ? $_SESSION['presets']['email'] : ""; ?>" type= "text" name="email">
+			<input type="text" class="emailTxt" value= "<?php echo isset($_SESSION['presets']['email']) ? $_SESSION['presets']['email'] : ""; ?>" type= "text" name="email">
 			</div>
 			
 		<!--	<form action="login_handler.php" method="POST"> -->
 		<!--	<div>email: <input type="text" name="email" value="<?php/* echo $email;*/ ?>"/>
 			</div> -->
 			<div><label for="password">password: </label>
-			<input type="password" name="password" value=""/>
+			<input type="password" name="password" />
+			<?php if(isset($_SESSION['errors']['password'])) { ?>
+				<span id="pasError" class="error"> <?=$_SESSION['errors']['password'] ?></span>
+				<?php } ?>
 			</div>
-			<div> <input type="submit" id="button" value="login"></div>
+			<div> <input type="submit" id="button" value="Login"></div>
 		</form>
 	</div>
 	</body>
