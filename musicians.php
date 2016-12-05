@@ -40,9 +40,12 @@
 			</ul>
 		</div>
 		<div id = "content">
-		<!--	<?php /*$query = ($dao->"SELECT name AND password FROM user WHERE occupation CONTAINS 'student'");
-			echo $query;*/ ?> -->
-			<a class="profile" href="profile.php">Ayden Grant</a>
+			<?php foreach($name as $Name) { ?>
+			 <li>
+                                <a class="profile" href="/cs401/profile.php"><?= $Name['name']; ?></a>
+                        <?php } ?>
+                        </li>
+		<!--	<a class="profile" href="profile.php">Ayden Grant</a> -->
 		</div>
 		<div id="footer">
 			<ul>
