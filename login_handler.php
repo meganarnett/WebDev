@@ -17,14 +17,14 @@
 			$_SESSION['logged_in'] = true;
 			session_regenerate_id(true);
 			$_SESSION['name'] = $user['name'];	
-			header("Location:homepage.php");
+			header("Location: /homepage.php");
 			exit;
 		}
 	} else {
 		$errors['validate'] = "Invalid email or password";
 		$_SESSION['logged_in'] = false;
 		//if not, redirect to login page
-		header("Location:login.php");
+		header("Location: /login.php");
 		exit;
 	}
 
@@ -37,7 +37,7 @@
 	}
 
 	if(isset($_SESSION['errors'])) {
-		header("Location:login.php");
+		header("Location: /login.php");
 		exit;
 	}
 ?>
