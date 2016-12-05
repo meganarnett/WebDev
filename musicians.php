@@ -2,6 +2,7 @@
 	require_once('Dao.php');
 	session_start();
 	$dao = new Dao();
+	$name = $dao->getNameStudent();
 ?>
 <html>
 	<head>
@@ -42,7 +43,7 @@
 		<div id = "content">
 			<?php foreach($name as $Name) { ?>
 			 <li>
-                                <a class="profile" href="/cs401/profile.php"><?= $Name['name']; ?></a>
+                                <a class="profile" href="/profile.php"><?= $Name['name']; ?></a>
                         <?php } ?>
                         </li>
 		<!--	<a class="profile" href="profile.php">Ayden Grant</a> -->
