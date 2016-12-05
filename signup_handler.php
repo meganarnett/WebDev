@@ -35,18 +35,17 @@
 	if(empty($errors)) {
 		if($dao->doesUserExist($email, $password)) {
 			$_SESSION['errors']['userExists'] = "Account already exists";
-			header('Location: /cs401/signup.php');
+			header('Location: /signup.php');
 		}else{
 		    if($dao->addUser($name, $email, $password, $occupation)) {
-			
-			header('Location: /cs401/homepage.php');	
+			header('Location: /homepage.php');	
 		    }
 		}
 	}else{
 		$_SESSION['errors'] = $errors;
 		$_SESSION['presets'] = array('name'=>htmlspecialchars($name), 
 					     'email' => htmlspecialchars($email));
-		header('Location: signup.php');
+		header('Location: /signup.php');
 	}
 
 ?>
