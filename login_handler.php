@@ -31,6 +31,7 @@
 	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', email, $matches)) {
 		$_SESSION['errors'][] = "Invalid email address";
 	}
+	$presets['email'] = htmlspecialchars($email);
 	
 	if(empty($password)) {
 		$_SESSION['errors'][] = "Missing Password";
