@@ -26,20 +26,22 @@ class Dao {
 		}
 	}
 
-	public function addUser($name, $email, $password, $occupation) {
+	public function addUser($name, $email, $password, $occupation, $location, $inst) {
 		//Hashing Password
 		$digest = password_hash($pasword, PASSWORD_DEFAULT);
 		if(!$digest) {
                         throw new Exception("Password could not be hashed.");
                 }
 		$conn=$this->getConnection();
-		$save = "INSERT INTO user (name, email, password, occupation)
-			 VALUES (:name, :email, :password, :occupation)";
+		$save = "INSERT INTO user (name, email, password, occupation, location, instrument)
+			 VALUES (:name, :email, :password, :occupation, :location, :instrument)";
 		$p = $conn->prepare($save);
 		$p->bindParam(':name', $name);
 		$p->bindParam(':email', $email);
 		$p->bindParam(':password', $digest);
 		$p->bindParam(':occupation', $occupation);
+		$p->bindParam(':location', $location);
+		$p->bindParam(':instrument', $inst);
 		
 		try {
 			$p->execute();
@@ -78,5 +80,15 @@ class Dao {
                         }
                 }
                 return false;
+	}
+	
+	public function getNameStudent() {
+		$conn = $this->getConnection();
+		return $conn->query("SELECT name FROM user WHERE occupation='student'");
+	}
+	
+	public function getNameTeacher() {
+		$conn = $this->getConnection();
+		return $conn->query("SELECT name FROM user WHERE occupation='teacher'");
 	}
 }
