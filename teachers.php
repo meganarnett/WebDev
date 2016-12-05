@@ -1,6 +1,8 @@
 <?php
 	require_once('Dao.php');
 	session_start();
+	$dao = new Dao();
+        $name = $dao->getNameTeacher();
 ?>
 
 <html>
@@ -37,6 +39,13 @@
 					<a class="nLink" href="/schools.php">Schools</a>
 				</li> -->
 			</ul>
+		</div>
+		<div id = "content">
+                        <?php foreach($name as $Name) { ?>
+                        <li>
+                                <a class="profile" href="/profile.php"><?= $Name['name'] ?></a>
+                        <?php } ?>
+                        </li>
 		</div>
 		<div id="footer">
 			<ul>
