@@ -1,4 +1,4 @@
-function openCity(evt, cityName) {
+/*function openCity(evt, cityName) {
 	//declare all variables
 	var i, tabcontent, tablinks;
 	
@@ -20,4 +20,14 @@ function openCity(evt, cityName) {
 
 	//get the element with id="defaultOpen" and click on it
 	document.getElementById("defaultOpen").click();
-}
+} */
+
+var tabs = $('.tabs');
+
+$('.tab').hide();
+tabs.find('a').on('click', function(e){
+        e.preventDefault();
+        tabs.find('.current').removeClass('current');
+        $(this).addClass('current');
+        $(this.hash).show().siblings().hide();
+}).first().click();
