@@ -91,4 +91,50 @@ class Dao {
 		$conn = $this->getConnection();
 		return $conn->query("SELECT name FROM user WHERE occupation='teacher'");
 	}
+	
+	public function getLoc($name) {
+                $conn = $this->getConnection();
+                $p = $conn->prepare("SELECT location FROM user WHERE name = :name limit 1");
+                $p->bindParam(':name', $name);
+                $p->execute();
+                $result = $p->fetchAll(PDO::FETCH_ASSOC);
+                return $result;
+        }
+
+        public function getOcc($name) {
+                $conn = $this->getConnection();
+                $p = $conn->prepare("SELECT occupation FROM user WHERE name = :name limit 1");
+                $p->bindParam(':name', $name);
+                $p->execute();
+                $result = $p->fetchAll(PDO::FETCH_ASSOC);
+                return $result;
+        }
+
+        public function getEmail($name) {
+                $conn = $this->getConnection();
+                $p = $conn->prepare("SELECT email FROM user WHERE name= :name limit 1");
+                $p->bindParam(':name', $name);
+                $p->execute();
+                $result = $p->fetchAll(PDO::FETCH_ASSOC);
+                return $result;
+        }
+
+        public function getInst($name) {
+                $conn = $this->getConnection();
+                $p = $conn->prepare("SELECT instrument FROM user WHERE name = :name limit 1");
+                $p->bindParam(':name', $name);
+                $p->execute();
+                $result = $p->fetchAll(PDO::FETCH_ASSOC);
+                return $result;
+        }
+	
+	public function editProfile() {
+                $conn = $this->getConnection();
+                $save = "INSERT INTO user(location, occupation, instrument) VALUES(:location, :occupation, :instrument)";
+                $q = $conn->prepare($save);
+                $q->bindParam(":location", $location);
+                $q->bindParam(":occupation", $occupation);
+                $q->bindParam(":instrument", $inst);
+                $q->execute();
+        }
 }
